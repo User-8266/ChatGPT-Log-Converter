@@ -188,7 +188,7 @@ python3 split_conversations.py conversations2026-02-06.json
 # 3. 一括変換
 python3 batch_convert.py raw/ markdown/
 # または Obsidian vault へ直接
-python3 batch_convert.py raw/ /Users/sakusya/ObsidianVaults/Vault01/GPT_LOG/
+python3 batch_convert.py raw/ /Users/username/ObsidianVaults/Vault01/GPT_LOG/
 
 # 4. 個別テスト（必要に応じて）
 python3 to_markdown.py raw/2024/01/2024-01-15-test.json
