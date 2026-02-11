@@ -218,8 +218,8 @@ python3 split_conversations.py conversations.json
 python3 batch_convert.py raw/ markdown/
 
 # 絶対パス
-python3 split_conversations.py /Users/sakusya/data/conversations.json
-python3 batch_convert.py /Users/sakusya/raw/ /Users/sakusya/output/
+python3 split_conversations.py /Users/username/data/conversations.json
+python3 batch_convert.py /Users/username/raw/ /Users/username/output/
 ```
 
 ---
@@ -274,7 +274,7 @@ ChatGPTのconversations.jsonをいじろうとしてるんだからChatGPTのア
 
 ### ⑤ スクリプトの実行
 
-ターミナルを起動して、conversations.jsonを置いた場所まで行きます。  
+ターミナルを起動して、conversations.jsonを置いた場所まで行きます。（カレントディレクトリを移動させるというやつです）  
 以下のコマンドを入力します。
 
 ```bash
@@ -375,6 +375,24 @@ ChatGPTのMarkdownの使い方はかなりいいかげんなので、手直し�
 俺の場合はObsidianを勧められて導入し、そのまま使い続けています。  
 理由： **変に自前のデータベースに吸収せずに .md ファイルを直接編集できる。**  
 過去ログを「ファイル」として扱う事が多い身には助かります。
+
+### json_analyzer_deep.pyとjson_analyzer_priority.py
+
+この2つはclaudeがスクリプトを書く際に参考にした補助スクリプトです。ご自分のAIさんにスクリプトをカスタムしてもらう時に使えるかも知れません。
+
+使い方はconversations.jsonと同じフォルダにスクリプトを置いて実行するだけです。  
+ただし、それだとターミナル画面に流れて終わりになるので、必要に応じてファイルに出力してやります。  
+Mac OSの場合は、例えばこうです。
+
+```bash
+python3 json_analyzer_deep.py > json_analyzer_deep.txt
+```
+
+```bash
+python3 json_analyzer_priority.py > json_analyzer_priority.txt
+```
+
+統計データとか出てきます。
 
 ### raw/index.jsonの使い道
 
