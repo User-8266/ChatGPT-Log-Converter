@@ -2,7 +2,7 @@
 
 **Note: These documents are written in Japanese.**
 
-ChatGPTのconversations.jsonを.mdに変換するPythonスクリプト群です。
+ChatGPTのconversations.jsonを.mdに変換するPythonスクリプト群です。  
 動作環境はMac OS 26上で動くPython 3.9.6となります。
 
 コードを書いたのはウチのAIチームのclaudeです。
@@ -56,11 +56,7 @@ claudeくんが「これも書いた方がいいですよ」だってさ。
 
 ## バージョン履歴
 
-- v1.0.0
+- v1.0
 	- 初版リリース
-- v1.0.1
-	- 誤字を修正
-
-（以後の更新履歴はGitHubの履歴機能を使用）
 
 [End of File]
